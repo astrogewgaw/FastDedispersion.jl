@@ -1,0 +1,7 @@
+name = "FastDedispersion"
+uuid = "cc06def3-2353-4c98-8bd7-2d137bd7be85"
+authors = ["Ujjwal Panda <ujjwalpanda97@gmail.com> and contributors"]
+version = "0.0.1"
+
+[compat]
+julia = "1.9"
