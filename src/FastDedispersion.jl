@@ -72,7 +72,7 @@ function recursive_loop(y₀, yₙ, inseg::InputSegment)
     return oseg
 end
 
-function transform(I, fₕ, fₗ, δt, dm₀, dmₙ)
+function fastdd(I, fₕ, fₗ, δt, dm₀, dmₙ)
     inseg = InputSegment(fₕ, fₗ, δt, I)
     y₀ = round(Int, dm₀ / δdm(inseg))
     yₙ = round(Int, ceil(dmₙ / δdm(inseg)))
